@@ -1,0 +1,235 @@
+
+
+/* Penataan Header */
+header {
+    background-color: #caaa6d;
+    color: rgb(253, 253, 253);
+    padding: 20px 20px;
+    text-align: center;
+    border-radius: 40px;
+    border-bottom: 5px solid hsl(39, 47%, 40%); /* Garis merah sebagai aksen */
+    margin-left: auto;
+    margin-right: auto; 
+    box-shadow: 0 50px 50px rgba(0,0,0,0.1);
+    margin-top: 50px;
+} 
+
+header h1 {
+    margin-bottom: 5px;
+    font-size: 3pt;
+}
+
+header p {
+    font-weight: bold; /* PERBAIKAN: Menggunakan font-weight untuk membuat tebal */
+}
+
+/* Penataan Konten Utama */
+main {
+    max-width: 900px;
+    margin: 20px auto; 
+    padding: 0 20px;
+}
+
+/* Penataan Setiap Bagian (Section) Sejarah */
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+section h2 {
+    color: #967436; 
+    border-bottom: 2px solid #bdc3c7;
+    padding-bottom: 10px;
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+/* Penataan Paragraf Konten */
+.konten-sejarah {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Penataan Footer */
+footer {
+    text-align: center;
+    padding: 200px;
+    background-color: #caaa6d; 
+    color: #ffffff;
+    font-size: 0.9em;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    font-weight: 100p;
+}
+
+/* -------------------- */
+/* Bagian Navigasi */
+/* -------------------- */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex; /* KUNCI: Membuat semua LI sejajar horizontal */
+    gap: 20px; 
+    justify-content: center; 
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+/* Hapus selector 'header nav ul li span' */
+
+header nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #967436;
+    font-weight: bold;  
+}
+
+/* -------------------- */
+/* Gambar (Perbaikan Selector) */
+/* -------------------- */
+img { /* Menarget semua tag <img> */
+    max-width: 100%;
+    height: 500px;
+    display: block;
+    margin: 50px auto;
+    border-radius: 16px;
+}
+
+.action-button {
+    /* Properti CSS yang sudah ada */
+    background-color: hsl(39, 47%, 25%); 
+    color: white;
+    padding: 0px 20px;
+    border: none;
+    border-radius: 8px; 
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: -20px;
+    display: inline-block; /* Agar bisa diatur lebar dan padding */
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    text-align: center; /* Memastikan teks di tengah */
+    line-height: 50px;
+}
+
+.action-button:hover {
+background-color: hsl(39, 47%, 20%);
+}
+
+.action-button.kapsul {
+    border-radius: 100px; /* Nilai besar, biasanya > 50% dari tinggi tombol */
+}
+
+/* Jika Anda ingin tombol berbentuk lingkaran (hanya cocok untuk tombol kotak): */
+.action-button.lingkaran {
+    width: 25px;
+    height: 25px;
+    border-radius: 200%; /* Membuat lingkaran penuh */
+    padding: 0;
+    text-align: center;
+    line-height: 50px; /* Memastikan teks di tengah vertikal */
+}
+
+.btn {
+    /* Bentuk & Teks */
+    display: inline-block;
+    padding: 18px 70px;
+    font-size: 16px;
+    font-weight: 600; /* Semi-bold */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px; /* Sudut sedikit membulat */
+    cursor: pointer;
+    border: 2px solid transparent; /* Border default */
+    background-color: hsl(39, 46%, 20%);
+    color: #ffffff;
+    height: 10px;
+    line-height: 9px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 1px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+.btn2 {
+    /* Bentuk & Teks */
+    display: inline-block;
+    padding: 18px 20px;
+    font-size: 16px;
+    font-weight: 600; /* Semi-bold */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px; /* Sudut sedikit membulat */
+    cursor: pointer;
+    border: 2px solid transparent; /* Border default */
+    background-color: hsl(39, 46%, 40%);
+    color: #ffffff;
+    height: 10px;
+    line-height: 9px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 1px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+body {
+    background-image: url('image/bg1.jpeg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center center;
+    background-color: #f0f0f0; 
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    width: auto;
+    height: auto;
+}
+
+.content {
+    background-color: #0000007a; 
+    border-radius: 40px;
+    padding: 90px 110px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    margin-left: -50px;
+    margin-right: auto;
+    margin-top: -10px;
+    height: 1600px;
+}
+
+.content p {
+    color: #ffffff; 
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.content ul {
+    color: white;
+    font-size: 24px;
+}
+
+.content h3 {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+
+.content h1 {
+    color: #ffffff;
+    font-size: 72px;
+}
+
+.h6{
+    background-color: #0000003a; 
+    border-radius: 40px;
+    padding: 35px 110px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+}
